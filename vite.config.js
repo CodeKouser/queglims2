@@ -7,6 +7,6 @@ export default defineConfig({
 	// This is the fix: tell Vite/Rollup to not bundle these Node.js modules
 	// and treat them as external dependencies available in the runtime.
 	ssr: {
-		noExternal: ['mongodb', 'bson']
+		noExternal: ['mongodb', 'mongodb-connection-string-url', 'bson']
 	}
 });
